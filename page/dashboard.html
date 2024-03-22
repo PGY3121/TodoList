@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List : Dashboard</title>
+    <title>Dashboard - To Do List</title>
 </head>
 <body>
-    <h1>Dashboard</h1> 
+    <header>
+        <h1>Dashboard de To Do List</h1>
+    </header>
+    <nav>
+        <!-- Links de navegación o menú (opcional) -->
+        <a href="proyecto/crear.html">Crear Proyecto</a> | <a href="proyecto/listar.html">Ver Proyectos</a>
+    </nav>
+    <main>
+        <section>
+            <h2>Tareas en Proceso</h2>
+            <div id="tareasEnProceso">
+                <!-- Ejemplo de tarea en proceso -->
+                <div class="tarea">
+                    <h3>Título de Tarea 1</h3>
+                    <p>Descripción breve de la tarea...</p>
+                    <p>Proyecto: Nombre del Proyecto</p>
+                    <p>Fecha de vencimiento: 2024-03-20</p>
+                </div>
+                <!-- Más tareas en proceso aquí -->
+            </div>
+        </section>
+        <section>
+            <h2>Tareas Atrasadas</h2>
+            <div id="tareasAtrasadas">
+                <!-- Ejemplo de tarea atrasada -->
+                <!-- Más tareas atrasadas aquí -->
+            </div>
+        </section>
+        <section>
+            <h2>Tareas por Vencer</h2>
+            <div id="tareasPorVencer">
+                <!-- Ejemplo de tarea por vencer -->
+                <!-- Más tareas por vencer aquí -->
+            </div>
+        </section>
+        <section>
+            <h2>Tareas Completadas</h2>
+            <div id="tareasCompletadas">
+                <!-- Ejemplo de tarea completada -->
+                <!-- Más tareas completadas aquí -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 To Do List App</p>
+    </footer>
 </body>
 </html>
