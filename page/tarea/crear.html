@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List: Tareas - Crear</title>
+    <title>Crear Tarea - To Do List</title>
 </head>
 <body>
-    <h1>Tareas - Crear</h1>
+    <header>
+        <h1>Crear Nueva Tarea</h1>
+    </header>
+    <main>
+        <form action="/crearTarea" method="post">
+            <div>
+                <label for="nombre_tarea">Nombre de la Tarea:</label>
+                <input type="text" id="nombre_tarea" name="nombre_tarea" required>
+            </div>
+            <div>
+                <label for="descripcion_tarea">Descripción:</label>
+                <textarea id="descripcion_tarea" name="descripcion_tarea" rows="3" required></textarea>
+            </div>
+            <div>
+                <label for="fecha_vencimiento">Fecha de Vencimiento:</label>
+                <input type="date" id="fecha_vencimiento" name="fecha_vencimiento" required>
+            </div>
+            <div>
+                <label for="proyecto_asociado">Proyecto Asociado:</label>
+                <select id="proyecto_asociado" name="proyecto_asociado" required>
+                    <!-- Las opciones se generarán dinámicamente basadas en los proyectos existentes -->
+                    <option value="proyecto1">Proyecto 1</option>
+                    <option value="proyecto2">Proyecto 2</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Crear Tarea</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>

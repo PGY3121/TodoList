@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List: Tareas - Listar</title>
+    <title>Ver Tareas - To Do List</title>
 </head>
 <body>
-    <h1>Tareas - Listar</h1>
+    <header>
+        <h1>Tareas</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Listado de Tareas</h2>
+            <div id="filtro_tareas">
+                <!-- Aquí podrías incluir opciones para filtrar las tareas (por proyecto, estado, fecha de vencimiento, etc.) -->
+            </div>
+            <div id="lista_tareas">
+                <!-- Las tareas se listarán aquí -->
+                <!-- Ejemplo de una tarea -->
+                <article class="tarea">
+                    <h3>Nombre de la Tarea</h3>
+                    <p>Descripción de la tarea...</p>
+                    <p>Fecha de vencimiento: 2023-03-15</p>
+                    <p>Estado: En proceso</p>
+                    <footer>
+                        <button>Editar</button>
+                        <button>Eliminar</button>
+                    </footer>
+                </article>
+                <!-- Repite el artículo para cada tarea -->
+            </div>
+        </section>
+    </main>
 </body>
 </html>

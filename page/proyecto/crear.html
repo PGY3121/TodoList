@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List: Proyectos - Crear</title>
+    <title>Crear Proyecto - To Do List</title>
 </head>
 <body>
-    <h1>Proyectos - Crear</h1>
+    <header>
+        <h1>Crear Nuevo Proyecto</h1>
+    </header>
+    <main>
+        <form action="/crearProyecto" method="post">
+            <div>
+                <label for="nombre_proyecto">Nombre del Proyecto:</label>
+                <input type="text" id="nombre_proyecto" name="nombre_proyecto" required>
+            </div>
+            <div>
+                <label for="descripcion_proyecto">Descripción del Proyecto:</label>
+                <textarea id="descripcion_proyecto" name="descripcion_proyecto" rows="4" required></textarea>
+            </div>
+            <div>
+                <label for="fecha_inicio">Fecha de Inicio:</label>
+                <input type="date" id="fecha_inicio" name="fecha_inicio" required>
+            </div>
+            <div>
+                <label for="fecha_fin">Fecha de Finalización Estimada:</label>
+                <input type="date" id="fecha_fin" name="fecha_fin">
+            </div>
+            <div>
+                <button type="submit">Crear Proyecto</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>

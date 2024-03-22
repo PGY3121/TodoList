@@ -1,11 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo List: Proyectos - Listar</title>
+    <title>Ver Proyectos - To Do List</title>
 </head>
 <body>
-    <h1>Proyectos - Listar</h1>
+    <header>
+        <h1>Proyectos</h1>
+        <!-- Botón para crear nuevo proyecto -->
+        <a href="/page/proyecto/crear.html" class="nuevo-proyecto">Crear Nuevo Proyecto</a>
+    </header>
+    <main>
+        <section>
+            <h2>Listado de Proyectos</h2>
+            <div id="lista_proyectos">
+                <!-- Los proyectos se listarán aquí -->
+                <!-- Ejemplo de un proyecto -->
+                <article class="proyecto">
+                    <h3>Nombre del Proyecto</h3>
+                    <p>Descripción breve del proyecto...</p>
+                    <p>Fecha de inicio: 2023-01-01</p>
+                    <p>Fecha de finalización estimada: 2023-12-31</p>
+                    <footer>
+                        <button>Ver Detalles</button>
+                        <button>Editar</button>
+                        <button>Eliminar</button>
+                    </footer>
+                </article>
+                <!-- Repite el artículo para cada proyecto -->
+            </div>
+        </section>
+    </main>
 </body>
 </html>
