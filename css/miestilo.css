@@ -1,0 +1,17 @@
+body {
+  font-family: "Tahoma";
+}
+header {
+  background-color: #c4fd17;
+  border: 1px solid #000;
+}
+header .titulo {
+  color: pink;
+}
+.titulo {
+  font-weight: bold;
+  color: green;
+}
+#contenedor {
+  border: 4px solid blue;
+}

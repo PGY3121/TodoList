@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>To Do List - Inicio</title>
+    <link rel="stylesheet" href="../css/miestilo.css">
 </head>
 <body>
-
     <header>
-        <h1>Bienvenido a To Do List</h1>
+        <h1 class="titulo">Bienvenido a To Do List</h1>
     </header>
-    <main>
+    <div>
+        <p class="titulo">Subtitulo</p>
+    </div>
+    <main id="contenedor">
         <form action="/login" method="post">
             <label for="email"><b>Correo electrónico:</b></label>
             <input type="email" id="email" name="email" required>
             <label for="password"><b>Contraseña:</b></label>
             <input type="password" id="password" name="password" required>
             <button type="submit">Iniciar sesión</button>
+           
         </form>
         <a href="registro.html">Registrarse</a> | <a href="recuperar_password.html">Olvidé mi contraseña</a>
     </main>
